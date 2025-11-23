@@ -4,7 +4,7 @@ interface ButtonProps{
     buttonBackgroundColor?:'red'|'blue'|'green'
     action?: () => void
 }
-const Button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: ButtonProps) => {
+const button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: ButtonProps) => {
 
 const backgroundColorClass = buttonBackgroundColor ? {
     red: 'bg-red-500',
@@ -21,4 +21,4 @@ return (
     )
 }
 
-export default Button;
+export default button;
